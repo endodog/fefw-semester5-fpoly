@@ -1,0 +1,398 @@
+<section class="mt-5 pt-5 wrap_content1">
+  <!-- wrap_content1 -->
+  <div class="container-lg container-fluid">
+    <!-- container -->
+    <div class="row">
+      <!-- row -->
+      <div class="col-13 col-lg-8">
+        <!-- col -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="height: 500px">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item">
+              <a href="#">
+                <img src="../../img/slide/slide3.png" class="d-block w-100" alt="..." style="height: 500px" />
+              </a>
+            </div>
+            <div class="carousel-item active">
+              <a href="#">
+                <img src="../../img/slide/slide1.png" class="d-block w-100" alt="..." style="height: 500px" />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img src="../../img/slide/slide2.png" class="d-block w-100" alt="..." style="height: 500px" />
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col-4 p-2 rounded wrap_news d-none d-lg-block overflow-auto" style="height: 500px">
+        <!-- col -->
+        <div class="d-flex justify-content-between mt-3 ms-2">
+          <span class="text_news fw-bold fs-5 text-capitalize">Tin tức mới nhất</span>
+          <a href="#" class="mt-2" style="text-decoration: none; color: gray">
+            <span class="text_viewmore text-uppercase me-2 fw-normal">Xem thêm</span>
+          </a>
+        </div>
+        <div class="ms-2 mt-3" ng-repeat="new in news">
+          <a href="#" class="d-flex text-decoration-none text-dark">
+            <div class="thumbnail_news">
+              <img src="{{new.image}}" width="100px" height="68px" class="align-text-top" />
+            </div>
+            <div class="newspaper ms-3">
+              <span class="fw-bold">{{new.name}}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- col -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+</section>
+<!-- wrap_content1 -->
+<section class="wrap_content2 mt-5">
+  <!-- wrap_content2 -->
+  <div class="container container-fluid">
+    <!-- container, container-fluid -->
+    <div class="content_inside">
+      <!-- content_inside -->
+
+      <div class="home_navs">
+        <!-- home_navs -->
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+          <!-- nav-tabs -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              <span class="text_newproduct">Sản Phẩm Mới</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+              <span class="text_promotion">Bán Chạy</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+              type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+              <span class="text_discount">Khuyến Mãi</span>
+            </button>
+          </li>
+          <div class="viewall ms-auto mt-2">
+            <a href="#viewmore" class="text-secondary text-decoration-none">
+              <span class="text_viewmore fs-6 fw-normal">Xem tẩt cả</span>
+            </a>
+          </div>
+        </ul>
+        <!-- nav-tabs -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="new_product mt-3">
+              <!-- new_product -->
+              <div class="row rounded border p-1" style="background-color: #e6e6e6; height: 271px">
+                <!-- row -->
+                <div class="col-2 product p-2 rounded ms-3 mt-3"
+                  style="height: 230px; width: 200px; background-color: #ffffff"
+                  ng-repeat="product in keyboards | filter:{status: 'Mới'} | limitTo:6 track by $index">
+                  <!-- col -->
+                  <a class="text-decoration-none" href="#products1/{{product.id}}">
+                    <div class="thumbnail">
+                      <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+                    </div>
+                    <div class="product_info">
+                      <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+                        {{product.name}}
+                      </p>
+                      <span
+                        class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling
+                        | currency:"₫" : 0}}</span>
+                      <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" : 0}}
+                        ₫</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- col -->
+              </div>
+              <!-- row -->
+            </div>
+            <!-- new_product -->
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
+            <div class="discount_product mt-3">
+              <!-- promotion_product -->
+              <div class="row rounded border p-1" style="background-color: #e6e6e6; height: 271px">
+                <!-- row -->
+                <div class="col-2 product p-2 rounded ms-3 mt-3"
+                  style="height: 230px; width: 200px; background-color: #ffffff"
+                  ng-repeat="product in keyboards | filter:{brand: 'E-DRA'} | limitTo:6 track by $index">
+                  <!-- col -->
+                  <a class="text-decoration-none" href="#products1/{{product.id}}">
+                    <div class="thumbnail">
+                      <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+                    </div>
+                    <div class="product_info">
+                      <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+                        {{product.name}}
+                      </p>
+                      <span
+                        class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling
+                        | currency:"₫" :0}}</span>
+                      <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" : 0}}
+                        ₫</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- col -->
+              </div>
+              <!-- row -->
+            </div>
+            <!-- promotion_product -->
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="2">
+            <div class="discount_product mt-3">
+              <!-- discount_product -->
+              <div class="row rounded border p-1" style="background-color: #e6e6e6; height: 271px">
+                <!-- row -->
+                <div class="col-2 product p-2 rounded ms-3 mt-3"
+                  style="height: 230px; width: 200px; background-color: #ffffff"
+                  ng-repeat="product in keyboards | filter:{onSale: true} | limitTo:6 track by $index">
+                  <!-- col -->
+                  <a class="text-decoration-none" href="#products1/{{product.id}}">
+                    <div class="thumbnail">
+                      <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+                    </div>
+                    <div class="product_info">
+                      <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+                        {{product.name}}
+                      </p>
+                      <span
+                        class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling
+                        | currency:"₫" : 0}}</span>
+                      <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" : 0}}
+                        ₫</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- col -->
+              </div>
+              <!-- row -->
+            </div>
+            <!-- discount_product -->
+          </div>
+        </div>
+      </div>
+      <!-- home_navs -->
+    </div>
+    <!-- content_inside -->
+
+    <div class="mt-5 content_inside1">
+      <!-- content_inside1 -->
+      <div class="wrap_brands_keyboard rounded bg-dark" style="height: 65px">
+        <!-- wrap_brands_keyboard -->
+        <div class="row p-2 ms-1">
+          <!-- row -->
+          <div class="col-5 bg-light rounded" style="height: 50px; width: 350px">
+            <p class="fw-bold fs-3 mt-1 text-uppercase text_keyboard">
+              Bàn phím
+            </p>
+          </div>
+          <div class="brand_keyboard col-auto bg-light rounded ms-5 mt-2" ng-repeat="kb in keyboardBrand"
+            style="height: 35px; width: 170px">
+            <!-- col-auto -->
+            <a href="#akko" class="text-dark text-decoration-none">
+              <p class="text_brand fw-bold mt-2 text-uppercase text-center">
+                {{kb.name}}
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- wrap_brands_keyboard -->
+      <div class="displayListProduct mt-4">
+        <!-- displayListProduct -->
+        <div class="row rounded border p-1" style="background-color: #e6e6e6; height: 535px">
+          <!-- row -->
+          <div class="col-2 product p-2 rounded ms-3 mt-3"
+            style="height: 230px; width: 200px; background-color: #ffffff"
+            ng-repeat="product in keyboards | limitTo:12 track by $index">
+            <!-- col -->
+            <a class="text-decoration-none" href="#products1/{{product.id}}">
+              <div class="thumbnail">
+                <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+              </div>
+              <div class="product_info">
+                <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+                  {{product.name}}
+                </p>
+                <span
+                  class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling
+                  | currency:"₫" : 0}}</span>
+                <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" : 0}} ₫</span>
+              </div>
+            </a>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- displayListProduct -->
+      <div class="wrap_more_product text-center mt-4">
+        <!-- wrap_more_product -->
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="btn btn-outline-dark rounded" style="height: 45px">
+            <p class="mt-1 fw-normal">
+              Xem thêm
+              <i class="fas fa-plus-circle"></i>
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- wrap_more_product -->
+    </div>
+    <!-- content_inside1 -->
+    <div class="mt-5 content_inside2">
+      <!-- content_inside2 -->
+      <div class="wrap_brands_keycap rounded bg-dark" style="height: 65px">
+        <!-- wrap_brands_keycap -->
+        <div class="row p-2 ms-1">
+          <!-- row -->
+          <div class="col-5 bg-light rounded" style="height: 50px; width: 350px">
+            <p class="fw-bold fs-3 mt-1 text-uppercase text_keycap">KeyCap</p>
+          </div>
+          <div class="brand_keycap col-auto bg-light rounded ms-5 mt-2" ng-repeat="kb in keycapBrand"
+            style="height: 35px; width: 170px">
+            <a href="#akko" class="text-dark text-decoration-none">
+              <p class="text_brand fw-bold mt-2 text-uppercase text-center">
+                {{kb.name}}
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- wrap_brands_keycap -->
+      <div class="displayListProduct mt-4">
+        <!-- displayListProduct -->
+        <div class="row rounded border p-1" style="background-color: #e6e6e6; height: 535px">
+          <!-- row -->
+          <div class="col-2 product p-2 rounded ms-3 mt-3"
+            style="height: 230px; width: 200px; background-color: #ffffff" ng-repeat="product in keycaps">
+            <!-- col -->
+            <a class="text-decoration-none" href="#productDetail">
+              <div class="thumbnail">
+                <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+              </div>
+              <div class="product_info">
+                <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+                  {{product.name}}
+                </p>
+                <span
+                  class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.discount}}</span>
+                <span class="fw-bold product_price" style="color: red">{{product.price}}</span>
+              </div>
+            </a>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- displayListProduct -->
+      <div class="wrap_more_product text-center mt-4">
+        <!-- wrap_more_product -->
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="btn btn-outline-dark rounded" style="height: 45px">
+            <p class="mt-1 fw-normal">
+              Xem thêm
+              <i class="fas fa-plus-circle"></i>
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- wrap_more_product -->
+
+      <br />
+    </div>
+    <!-- content_inside2 -->
+    <div class="content_inside3 mt-2">
+      <!-- content_inside3 -->
+      <div class="wrap_policy">
+        <!-- wrap_policy -->
+        <div class="row">
+          <!-- row -->
+          <div class="col-4 rounded d-flex text-light" style="width: 310px; height: 75px; background-color: #04aa6d">
+            <!-- col -->
+            <div class="icon fs-1">
+              <i class="fas fa-user-shield mt-3"></i>
+            </div>
+            <div class="text_policy">
+              <p class="fs-5 ms-3 mt-2 fw-bold mt-4">Bảo hành chính hãng</p>
+            </div>
+          </div>
+          <!-- col -->
+          <div class="col-4 ms-4 rounded d-flex text-light"
+            style="width: 310px; height: 75px; background-color: #04aa6d">
+            <!-- col -->
+            <div class="icon fs-1">
+              <i class="fas fa-exchange-alt mt-3"></i>
+            </div>
+            <div class="text_policy">
+              <p class="fs-5 ms-4 mt-4 fw-bold">Đổi mới trong 7 ngày</p>
+            </div>
+          </div>
+          <!-- col -->
+          <div class="col-4 ms-4 rounded d-flex text-light"
+            style="width: 310px; height: 75px; background-color: #04aa6d">
+            <!-- col -->
+            <div class="icon fs-1">
+              <i class="fas fa-money-bill-alt mt-3"></i>
+            </div>
+            <div class="text_policy">
+              <p class="fs-5 ms-4 mt-4 fw-bold">Hỗ trợ trả góp 0%</p>
+            </div>
+          </div>
+          <!-- col -->
+          <div class="col-4 ms-4 rounded d-flex text-light"
+            style="width: 310px; height: 75px; background-color: #04aa6d">
+            <!-- col -->
+            <div class="icon fs-1">
+              <i class="fas fa-shipping-fast mt-3"></i>
+            </div>
+            <div class="text_policy">
+              <p class="fs-5 ms-3 mt-2 mt-4 fw-bold">Giao nhanh nội thành</p>
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- wrap_policy -->
+    </div>
+    <!-- content_inside3 -->
+  </div>
+  <!-- container, container-fluid -->
+</section>
+<!-- wrap_content2 -->

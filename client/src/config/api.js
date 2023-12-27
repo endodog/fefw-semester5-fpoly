@@ -1,0 +1,11 @@
+var apiURL = "http://localhost:3000";
+window.keyboardAPI = apiURL + "/keyboards/";
+window.keyboardBrandAPI = apiURL + "/keyboardBrand/";
+window.keycapAPI = apiURL + "/keycaps/";
+window.keycapBrandAPI = apiURL + "/keycapBrand/";
+window.newsAPI = apiURL + "/news/";
+window.cartAPI = apiURL + "/carts/";
+window.cityAPI = apiURL + "/citys/";
+window.districtAPI = apiURL + "/districts/";
+window.accountAPI = apiURL + "/accounts/";
+window.typesAccountAPI = apiURL + "/typesAccount/";

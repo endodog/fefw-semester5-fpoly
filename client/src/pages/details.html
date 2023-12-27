@@ -1,0 +1,176 @@
+<div class="wrap_details1 container mt-5 pt-4">
+  <div class="wrap_direction mt-3 fs-6">
+    <div class="text-direction">
+      <a class="text-danger text-decoration-none" href="#home">
+        <span class="text_direction_home fw-normal">
+          Trang chủ
+        </span>
+      </a>
+      <span class="text_arrow fw-normal">»</span>
+      <a class="text-danger text-decoration-none" href="#products1">
+        <span class="text_direction_product fw-normal">
+          Bàn phím
+        </span>
+      </a>
+      <span class="text_arrow fw-normal">»</span>
+      <span class="text-dark">{{name}}</span>
+    </div>
+  </div>
+  <div class="wrap_productDetails mt-3">
+    <div class="row rounded" style="height: 500px; width: 100%; background-color: #fff;">
+      <div class="col-5">
+        <div class="thumbnail_product d-flex justify-content-center">
+          <img class="ms-4" ng-model="image" src="{{image}}" width="450px">
+        </div>
+      </div>
+      <div class="col-7 mt-4">
+        <div class="wrap_info_details_product">
+          <span class="name_product fs-3" ng-model="name">{{name}}</span>
+          <div class="detail_other">
+            <span class="detail_brand">Thương hiệu:</span>
+            <span class="detail_name_brand text-dark">{{brand}}</span>
+            <span class="detail_status ms-4">Tình trạng:</span>
+            <span class="detail_name_status text-dark">{{status}}</span>
+            <span class="detail_product_code ms-4">Mã sản phẩm:</span>
+            <span class="detai_name_product_code">{{productCode}}{{id}}</span>
+          </div>
+          <hr class="hr">
+          <div class="wrap_price">
+            <span class="detail_discount_product fw-bold text-decoration-line-through fs-5">{{priceAfterFalling | currency:"₫" : 0}}</span>
+            <span class="detail_price_product ms-2 fw-bold fs-5" ng-model="price">{{price | currency:"" : 0}} ₫</span>
+          </div>
+          <div class="wrap_vat">
+            <span class="text_vat fst-italic">(Giá trên đã bao gồm thuế VAT)</span>
+          </div>
+          <hr class="hr" style="width: 60%;">
+          <div class="guarantee">
+            <span class="text_guarantee" style="color: #666666;">Bảo hành: {{guarantee}}</span>
+            <a href="#" class="text-decoration-none"><span class="regulations_guarantee ms-1">(Quy định bảo
+                hành)</span></a>
+          </div>
+          <hr class="hr" style="width: 60%;">
+          <div class="d-flex">
+            <div class="btn-amount-increase">
+              <button ng-click="increaseProduct()" class="btn btn-secondary d-flex justify-content-center"
+                style="width: 35px; height: 35px;" type="button"><span class="">+</span></button>
+            </div>
+            <div class="input_amount ms-2">
+              <input type="number" ng-model="amount" class="form-control text-center border-dark shadow-none"
+                style="width: 50px; height: 33px;">
+            </div>
+            <div class="btn-amount-reduce ms-2">
+              <button ng-click="reduceProduct()" class="btn btn-secondary d-flex justify-content-center"
+                style="width: 35px; height: 35px;" type="button"><span class="">-</span></button>
+            </div>
+            <span class="option_switch mt-2 ms-3">Tùy chọn Switch:
+            </span>
+            <select class="bg-light form-select ms-3 shadow-none border-secondary" aria-label="Default select example"
+              style="width: 140px; height: 33px; font-size: 14px;">
+              <option value="Blue Switch" selected>Blue Switch</option>
+              <option value="Brown Switch">Brown Switch</option>
+              <option value="Red Switch">Red Switch</option>
+            </select>
+          </div>
+          <hr class="hr" style="width: 60%;">
+          <div class="mt-3" style="width: 60%;">
+            <div class="d-flex">
+              <button ng-click="addProductInCart()" type="button" class="button_add_cart w-50"
+                style="border-radius: 30px;">
+                <span class="fw-bold">THÊM VÀO GIỎ
+                  HÀNG</span>
+              </button>
+              <button ng-click="addProductInCartAndPayment()" type="button" class="button_buy_product w-50 ms-2"
+                style="border-radius: 30px;">
+                <a href="#cart" class="text-light text-decoration-none">
+                  <span class="fw-bold">MUA NGAY</span>
+                </a>
+              </button>
+            </div>
+          </div>
+          <hr class="hr" style="width: 60%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap_details2 container mt-4">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active text-uppercase fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+        type="button" role="tab" aria-controls="home" aria-selected="true">Mô tả sản phẩm</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-uppercase fs-5" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+        type="button" role="tab" aria-controls="contact" aria-selected="false">Thông số kỹ thuật</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link text-uppercase fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+        type="button" role="tab" aria-controls="profile" aria-selected="false">Đánh giá</button>
+    </li>
+  </ul>
+  <div class="rounded" style="height: 2830px; width: 100%; background-color: #fff;">
+    <div class="p-4" style="width: 100%;">
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p class="fs-3 fw-bold text-danger name_kb">{{name}}</p>
+          <p class="fs-3 fw-bold name_kb1">Bàn phím cơ {{name}} mang lại cảm giác gõ chắc chắn</p>
+          <p>Với Zorro Blue Switch chuyên nghiệp, Bàn phím cơ Gaming HAVIT KB869L mang đến cho các game thủ trải nghiệm
+            gõ phím chắc chắn, mạnh mẽ. Nhờ công tắc cảm ứng âm thanh, bạn sẽ nghe thấy âm thanh rõ ràng của từng cú
+            nhấp chuột, và trò chơi sẽ trở nên thú vị hơn. Bàn phím cơ Gaming HAVIT KB869L có khả năng hoạt động đồng
+            thời lên đến 19 phím mà không bị xung đột. Ngoài ra, với thiết kế tiện dụng, bố trí phím thấp cao, bảng điều
+            khiển rộng và chân gấp, KB869L cho phép bạn luôn có được góc gõ thoải mái và cải thiện độ chính xác khi gõ
+            phím, đồng thời làm cho bàn phím máy tính này trở nên lý tưởng cho cả việc đánh máy văn phòng và chơi game.
+          </p>
+          <img class="p-2" src="https://nguyenvu.store/wp-content/uploads/2022/07/4.jpg" width="100%">
+          <p class="fs-3 fw-bold name_kb1">Bàn phím cơ AKKO 3068B mang lại cảm giác gõ chắc chắn</p>
+          <p>Với công nghệ chế tạo đặc biệt, các switch của Bàn phím cơ Gaming HAVIT KB869L có tuổi thọ cao lên đến 50
+            triệu lần nhấn. Một con số ấn tượng dành riêng cho các game thủ mong muốn sở hữu một con “chiến mã” cùng
+            mình chinh chiến lâu dài trong mỗi trận game.</p>
+          <img class="p-2" src="https://nguyenvu.store/wp-content/uploads/2022/07/2.jpg" width="100%" height="700px">
+          <p>Bên cạnh đó, chất liệu tạo nên KB869L cũng gồm các thành phần khó hư hỏng, chịu được nhiệt độ cao nên có
+            thể đảm bảo tình trạng của bàn phím luôn tốt.</p>
+          <p class="fs-3 fw-bold name_kb1">Hệ thống đèn LED đa sắc màu rực rỡ</p>
+          <p>Keyboard Gaming Havit KB869L sở hữu hệ thống đèn LED RGB với 16,8 triệu màu sẽ đem đến những trải nghiệm
+            sống động nhất cho quá trình thao tác game của bạn và nâng tầm vẻ đẹp tổng thể của góc gaming nhà bạn. Ngoài
+            ra, bạn cũng có thể điều chỉnh ánh sáng và nền đèn bất cứ khi nào bạn muốn.</p>
+          <img class="p-2"
+            src="https://nguyenvu.store/wp-content/uploads/2022/07/5-4498cc1f-1729-4c96-9204-cbae9c22e2a9.jpg"
+            width="100%">
+          <hr class="hr" style="width: 100%;">
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap_product_similar container rounded mt-4" style="background-color: #fff; height: 350px;">
+  <p class="fw-bold text-uppercase pt-3 ms-3">Sản phẩm tương tự</p>
+  <hr class="hr ms-3" style="width: 98%; background-color: #18a;">
+  <div class="discount_product mt-3 ms-2" style="width: 99%;">
+    <!-- discount_product -->
+    <div class="row rounded border" style="background-color: #e6e6e6; height: 271px">
+      <!-- row -->
+      <div class="col-2 product p-2 rounded ms-3 mt-3" style="height: 230px; width: 200px; background-color: #ffffff"
+        ng-repeat="product in keyboards | filter:getByBrand | limitTo:6 track by $index">
+        <!-- col -->
+        <a class="text-decoration-none" href="#productDetail">
+          <div class="thumbnail">
+            <img src="{{product.image}}" class="rounded product_image" width="180px" height="130px" />
+          </div>
+          <div class="product_info">
+            <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+              {{product.name}}
+            </p>
+            <span
+              class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling}}</span>
+            <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" :0 }} ₫</span>
+          </div>
+        </a>
+      </div>
+      <!-- col -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- discount_product -->
+</div>

@@ -1,0 +1,98 @@
+<div class="wrap_register">
+  <section class="__register mt-5 pt-5">
+    <div class="container d-flex justify-content-center">
+      <form class="form_register ms-4" name="myForm">
+        <!-- form_register -->
+        <div class="input-group input-fullname mb-3">
+          <!-- input_fullname -->
+          <span class="input-group-text">
+            <i class="far fa-user"></i>
+          </span>
+          <input type="text" ng-keypress="resetErrorInput1($event)" ng-model="name" name="name" class="form-control p-2"
+            placeholder="Họ và tên" ng-required="true" />
+        </div>
+        <div>
+          <span ng-model="_name" ng-show="_name" style="color:red; font-size: 14px;" class="error ms-1">{{_name}}</span>
+        </div>
+        <!-- input-fullname -->
+        <div class="input-group input-email mb-3 w-auto">
+          <!-- input_email -->
+          <span class="input-group-text">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <input type="text" ng-keypress="resetErrorInput2($event)" ng-model="email" ng-pattern="/^.+@gmail\.com$/"
+            name="email" class="form-control p-2" placeholder="Email" ng-required="true" />
+        </div>
+        <span ng-model="_email" style="color:red; font-size: 14px;" class="error ms-1"
+          ng-show="_email">{{_email}}</span>
+        <span ng-show="myForm.myEmail.$error.email">Địa chỉ email không hợp lệ</span>
+        <span style="color:red; font-size: 14px;" class="error"
+          ng-show="!myForm.email.$error.required&&myForm.email.$error.pattern">Email chưa hợp lệ</span>
+
+        <!-- input-email -->
+        <div class="input-group input-password mb-3">
+          <!-- input-password -->
+          <span class="input-group-text">
+            <i class="fas fa-lock"></i>
+          </span>
+          <input type="text" ng-keypress="resetErrorInput3($event)" ng-model="password" name="password"
+            class="form-control" placeholder="Mật khẩu" ng-required="true" />
+        </div>
+        <span ng-model="_password" style="color:red; font-size: 14px;" class="error ms-1"
+          ng-show="_password">{{_password}}</span>
+        <!-- input-password -->
+        <div class="input-group input-username mb-3 w-auto">
+          <!-- input_phone -->
+          <span class="input-group-text">
+            <i class="fas fa-phone"></i>
+          </span>
+          <input type="number" ng-keypress="resetErrorInput4($event)" name="phone" ng-minlength="10" ng-model="phone"
+            class="form-control p-2" placeholder="Số điện thoại" ng-required="true" />
+        </div>
+        <span ng-model="_phone" style="color:red; font-size: 14px;" class="error ms-1"
+          ng-show="_phone">{{_phone}}</span>
+        <span style="color:red; font-size: 14px;" class="error ms-1" ng-show="myForm.phone.$error.minlength">Số điện
+          thoại tối thiểu 10 số</span>
+        <!-- input-phone -->
+        <div class="mb-3 form-check d-flex">
+          <!-- requirement -->
+          <input type="checkbox" name="requireShop" ng-model="requireShop" class="form-check-input border border-dark"
+            id="exampleCheck1" ng-required="true" />
+          <label class="form-check-label ms-2" for="exampleCheck1">Tôi đã đồng ý với các điều khoản từ GKeyShop</label>
+        </div>
+        <!-- <span style="color:red; font-size: 14px;" class="error ms-1" ng-show="myForm.requireShop.$error.!required">
+          Điều kiện bắt buộc</span> -->
+        <!-- requirement -->
+        <button type="submit" ng-click="addNew()" class="button_register w-100">
+          <span class="text_login">Đăng ký </span>
+          <!-- <a href="#login" class="text-light text-decoration-none">
+          </a> -->
+        </button>
+        <div class="login_other d-flex justify-content-center">
+          <span class="mt-3 fw-bold text-dark">Hoặc đăng ký bằng</span>
+        </div>
+        <div class="group_login d-flex justify-content-center mt-3">
+          <div class="btn btn-primary d-flex">
+            <a href="#">
+              <i class="fab fa-facebook fs-4 text-light float-start"></i>
+            </a>
+          </div>
+          <div class="btn btn-danger d-flex ms-2">
+            <a href="#">
+              <i class="fab fa-google fs-4 text-light float-start"></i>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-2">
+          <!-- register -->
+          <span class="text-secondary fw-bold"> Bạn đã có tài khoản ? </span>
+          <a class="login_link" href="#login" style="text-decoration: none">
+            <span class="text-primary fw-bold ms-2"> Đăng nhập ngay </span>
+          </a>
+        </div>
+        <!-- resgister -->
+      </form>
+      <!-- form_register -->
+    </div>
+  </section>
+</div>

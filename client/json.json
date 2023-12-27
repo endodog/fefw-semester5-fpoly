@@ -1,0 +1,1056 @@
+{
+  "accounts": [
+    {
+      "name": "Admin",
+      "id": "admin@gmail.com",
+      "password": 1,
+      "phone": 1111111111,
+      "type": "Admin"
+    },
+    {
+      "name": "Customer",
+      "id": "customer@gmail.com",
+      "password": 1,
+      "phone": 1111111111,
+      "type": "Customer"
+    },
+    {
+      "name": "devo",
+      "id": "hagolive1988@gmail.com",
+      "password": 1,
+      "phone": 362482143,
+      "type": "Customer"
+    },
+    {
+      "name": "ABC",
+      "id": "abc@gmail.com",
+      "password": "121212",
+      "phone": 1121211111111
+    },
+    {
+      "name": "ggg",
+      "id": "hoangminhha00000@gmail.com",
+      "password": "11111",
+      "phone": 1111111111
+    }
+  ],
+  "typesAccount": [
+    {
+      "id": 1,
+      "name": "Customer"
+    },
+    {
+      "id": 2,
+      "name": "Admin"
+    }
+  ],
+  "news": [
+    {
+      "image": "../../img/news/news1.png",
+      "name": "Cách chọn bàn phím cơ phù hợp cho mọi người"
+    },
+    {
+      "image": "../../img/news/news2.png",
+      "name": "Kích hoạt Ultimate Performance để tối ưu hiệu suất trên Windows 11"
+    },
+    {
+      "image": "../../img/news/news3.png",
+      "name": "Đánh giá bàn phím cơ thương hiệu Việt 'Bàn Phím Cành Cạch CC68: Bước khởi đầu không tệ'"
+    },
+    {
+      "image": "../../img/news/news4.png",
+      "name": "Trên tay bàn phím Lofree To Be The 1%: Điểm độc lạ nằm ở sự trong suốt"
+    },
+    {
+      "image": "..//./img/news/news5.png",
+      "name": "Trải nghiệm bàn phím không dây HyperWork HyperONE KB1 và KB2"
+    },
+    {
+      "image": "../../img/news/news10.png",
+      "name": "Đánh giá bàn phím cơ không dây Anne Pro II: Lùi một bước, tiến hai bước"
+    },
+    {
+      "image": "../../img/news/news7.png",
+      "name": "Trên tay bàn phím cơ Keychron Q2"
+    },
+    {
+      "image": "../../img/news/news9.png",
+      "name": "Ra mắt bàn phím cơ Newmen GM610 hai chế độ, thuận tiện cho ai đam mê write"
+    }
+  ],
+  "keyboards": [
+    {
+      "id": 1,
+      "productCode": 1,
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 150000,
+      "status": "Mới",
+      "image": "../../img/product/pr1.png",
+      "guarantee": "12 tháng",
+      "onSale": true,
+      "priceAfterFalling": 750000,
+      "brand": "AKKO"
+    },
+    {
+      "id": 2,
+      "productCode": 2,
+      "image": "../../img/product/pr1.png",
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 250000,
+      "status": "Đã qua sử dụng",
+      "guarantee": "12 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "brand": "AKKO"
+    },
+    {
+      "id": 3,
+      "image": "../../img/product/pr1.png",
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 350000,
+      "productCode": 3,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 4,
+      "image": "../../img/product/pr1.png",
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 450000,
+      "productCode": 4,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 5,
+      "image": "../../img/product/pr1.png",
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 550000,
+      "productCode": 5,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 6,
+      "image": "../../img/product/pr1.png",
+      "name": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "price": 650000,
+      "productCode": 6,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 1350000,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 7,
+      "image": "../../img/product/pr2.png",
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "price": 750000,
+      "productCode": 7,
+      "guarantee": "12 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 8,
+      "image": "../../img/product/pr2.png",
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "price": 850000,
+      "productCode": 8,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Cũ",
+      "brand": "AKKO"
+    },
+    {
+      "id": 9,
+      "image": "../../img/product/pr2.png",
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "price": 950000,
+      "productCode": 9,
+      "guarantee": "12 tháng",
+      "onSale": true,
+      "priceAfterFalling": 850000,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "id": 10,
+      "image": "../../img/product/pr2.png",
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "price": 450000,
+      "productCode": 10,
+      "guarantee": "7 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "AKKO"
+    },
+    {
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "image": "../../img/product/pr2.png",
+      "price": 150000,
+      "onSale": false,
+      "priceAfterFalling": null,
+      "brand": "E-DRA",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "image": "../../img/product/pr2.png",
+      "name": "AKKO 3068B Plus Black&Cyan",
+      "price": 350000,
+      "productCode": 12,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Cũ",
+      "brand": "AKKO"
+    },
+    {
+      "id": 13,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 650000,
+      "productCode": 13,
+      "guarantee": "12 tháng",
+      "onSale": true,
+      "priceAfterFalling": 1350000,
+      "status": "Mới",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 14,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 100000,
+      "productCode": 14,
+      "guarantee": "12 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 15,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 120000,
+      "productCode": 15,
+      "guarantee": "12 tháng",
+      "onSale": true,
+      "priceAfterFalling": 3350000,
+      "status": "Mới",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 16,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 125000,
+      "productCode": 16,
+      "guarantee": "12 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Cũ",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 17,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 500000,
+      "productCode": 17,
+      "guarantee": "6 tháng",
+      "onSale": false,
+      "priceAfterFalling": null,
+      "status": "Mới",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 18,
+      "image": "../../img/product/pr3.png",
+      "name": "E-DRA EK396W - Gateron Red Switch",
+      "price": 550000,
+      "productCode": 18,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "E-DRA"
+    },
+    {
+      "id": 19,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 450000,
+      "productCode": 19,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "id": 20,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 150000,
+      "productCode": 20,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "id": 21,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 350000,
+      "productCode": 21,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "id": 22,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 650000,
+      "productCode": 22,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "id": 23,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 650000,
+      "productCode": 23,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "id": 24,
+      "image": "../../img/product/pr4.png",
+      "name": "Keychron K2 TKL Bluetooth",
+      "price": 350000,
+      "productCode": 24,
+      "guarantee": "6 tháng",
+      "onSale": true,
+      "priceAfterFalling": 950000,
+      "status": "Mới",
+      "brand": "Keychron"
+    },
+    {
+      "name": "aaa",
+      "price": 11111,
+      "onSale": true,
+      "priceAfterFalling": 11111111111,
+      "brand": "AKKO",
+      "id": 25
+    }
+  ],
+  "keyboardBrand": [
+    {
+      "id": 1,
+      "codeBrand": "BD00",
+      "name": "AKKO"
+    },
+    {
+      "id": 2,
+      "codeBrand": "BD00",
+      "name": "E-DRA"
+    },
+    {
+      "id": 3,
+      "codeBrand": "BD00",
+      "name": "Logitech"
+    },
+    {
+      "id": 3,
+      "codeBrand": "BD00",
+      "name": "Keychron"
+    }
+  ],
+  "keycapBrand": [
+    {
+      "id": 1,
+      "codeBrand": "BD00",
+      "name": "AKKO"
+    },
+    {
+      "id": 2,
+      "codeBrand": "BD00",
+      "name": "Asus"
+    },
+    {
+      "id": 3,
+      "codeBrand": "BD00",
+      "name": "Dareu"
+    },
+    {
+      "id": 4,
+      "codeBrand": "BD00",
+      "name": "Razer"
+    },
+    {
+      "id": 5,
+      "codeBrand": "BD00",
+      "name": "Logitech"
+    }
+  ],
+  "keycaps": [
+    {
+      "id": 1,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc1.png",
+      "discount": "750.000 ₫"
+    },
+    {
+      "id": 2,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc2.png"
+    },
+    {
+      "id": 3,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc3.png"
+    },
+    {
+      "id": 4,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc4.png",
+      "discount": "750.000 ₫"
+    },
+    {
+      "id": 5,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc5.png"
+    },
+    {
+      "id": 6,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc7.png"
+    },
+    {
+      "id": 7,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc7.png",
+      "discount": "750.000 ₫"
+    },
+    {
+      "id": 8,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc6.png"
+    },
+    {
+      "id": 9,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc5.png"
+    },
+    {
+      "id": 10,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc4.png",
+      "discount": "750.000 ₫"
+    },
+    {
+      "id": 11,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc3.png",
+      "discount": "750.000 ₫"
+    },
+    {
+      "id": 12,
+      "name": "Keycap Cho Bàn Phím Cơ Simple White Cherry ",
+      "price": "650.000 ₫",
+      "descript": null,
+      "image": "../../img/keycaps/kc2.png"
+    }
+  ],
+  "carts": [
+    {
+      "nameProduct": "E-DRA EK396W - Gateron Red Switch",
+      "imageProduct": "../../img/product/pr3.png",
+      "priceProduct": 650000,
+      "amountTotal": 10,
+      "id": 1
+    },
+    {
+      "nameProduct": "Keychron K2 TKL Bluetooth",
+      "imageProduct": "../../img/product/pr4.png",
+      "priceProduct": 450000,
+      "amountTotal": 1,
+      "id": 2
+    },
+    {
+      "nameProduct": "Akko 3087 v2 Bilibili - Akko Pink Switch",
+      "imageProduct": "../../img/product/pr1.png",
+      "priceProduct": 650000,
+      "amountTotal": 66,
+      "id": 5
+    },
+    {
+      "nameProduct": "AKKO 3068B Plus Black&Cyan",
+      "imageProduct": "../../img/product/pr2.png",
+      "priceProduct": 350000,
+      "amountTotal": 1,
+      "id": 6
+    },
+    {
+      "nameProduct": "E-DRA EK396W - Gateron Red Switch",
+      "imageProduct": "../../img/product/pr3.png",
+      "priceProduct": 650000,
+      "amountTotal": 1,
+      "id": 7
+    },
+    {
+      "nameProduct": "AKKO 3068B Plus Black&Cyan",
+      "imageProduct": "../../img/product/pr2.png",
+      "priceProduct": 950000,
+      "amountTotal": 4,
+      "id": 8
+    },
+    {
+      "nameProduct": "AKKO 3068B Plus Black&Cyan",
+      "imageProduct": "../../img/product/pr2.png",
+      "priceProduct": 950000,
+      "amountTotal": 1,
+      "id": 9
+    }
+  ],
+  "citys": [
+    {
+      "id": 1,
+      "name": "Hà Nội",
+      "code": 29
+    },
+    {
+      "id": 2,
+      "name": "Thanh Hóa",
+      "code": 36
+    }
+  ],
+  "districts": [
+    {
+      "id": 1,
+      "name": "Ba Đình",
+      "type": "quan",
+      "slug": "ba-dinh",
+      "name_with_type": "Quận Ba Đình",
+      "path": "Ba Đình, Hà Nội",
+      "path_with_type": "Quận Ba Đình, Thành phố Hà Nội",
+      "code": 29,
+      "codeCity": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 2,
+      "name": "Hoàn Kiếm",
+      "type": "quan",
+      "slug": "hoan-kiem",
+      "name_with_type": "Quận Hoàn Kiếm",
+      "path": "Hoàn Kiếm, Hà Nội",
+      "codeCity": 29,
+      "path_with_type": "Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 3,
+      "name": "Tây Hồ",
+      "type": "quan",
+      "slug": "tay-ho",
+      "name_with_type": "Quận Tây Hồ",
+      "path": "Tây Hồ, Hà Nội",
+      "codeCity": 29,
+      "path_with_type": "Quận Tây Hồ, Thành phố Hà Nội",
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 4,
+      "name": "Long Biên",
+      "type": "quan",
+      "slug": "long-bien",
+      "name_with_type": "Quận Long Biên",
+      "path": "Long Biên, Hà Nội",
+      "path_with_type": "Quận Long Biên, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 5,
+      "name": "Cầu Giấy",
+      "type": "quan",
+      "slug": "cau-giay",
+      "name_with_type": "Quận Cầu Giấy",
+      "path": "Cầu Giấy, Hà Nội",
+      "path_with_type": "Quận Cầu Giấy, Thành phố Hà Nội",
+      "code": 29,
+      "codeCity": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 6,
+      "name": "Đống Đa",
+      "type": "quan",
+      "slug": "dong-da",
+      "name_with_type": "Quận Đống Đa",
+      "path": "Đống Đa, Hà Nội",
+      "path_with_type": "Quận Đống Đa, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 7,
+      "name": "Hai Bà Trưng",
+      "type": "quan",
+      "slug": "hai-ba-trung",
+      "name_with_type": "Quận Hai Bà Trưng",
+      "path": "Hai Bà Trưng, Hà Nội",
+      "path_with_type": "Quận Hai Bà Trưng, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 8,
+      "name": "Hoàng Mai",
+      "type": "quan",
+      "slug": "hoang-mai",
+      "name_with_type": "Quận Hoàng Mai",
+      "path": "Hoàng Mai, Hà Nội",
+      "path_with_type": "Quận Hoàng Mai, Thành phố Hà Nội",
+      "code": 29,
+      "codeCity": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 9,
+      "name": "Thanh Xuân",
+      "type": "quan",
+      "slug": "thanh-xuan",
+      "name_with_type": "Quận Thanh Xuân",
+      "path": "Thanh Xuân, Hà Nội",
+      "path_with_type": "Quận Thanh Xuân, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 10,
+      "name": "Sóc Sơn",
+      "type": "huyen",
+      "slug": "soc-son",
+      "name_with_type": "Huyện Sóc Sơn",
+      "path": "Sóc Sơn, Hà Nội",
+      "path_with_type": "Huyện Sóc Sơn, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 11,
+      "name": "Đông Anh",
+      "type": "huyen",
+      "slug": "dong-anh",
+      "name_with_type": "Huyện Đông Anh",
+      "path": "Đông Anh, Hà Nội",
+      "path_with_type": "Huyện Đông Anh, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 12,
+      "name": "Gia Lâm",
+      "type": "huyen",
+      "slug": "gia-lam",
+      "name_with_type": "Huyện Gia Lâm",
+      "path": "Gia Lâm, Hà Nội",
+      "path_with_type": "Huyện Gia Lâm, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 13,
+      "name": "Nam Từ Liêm",
+      "type": "quan",
+      "slug": "nam-tu-liem",
+      "name_with_type": "Quận Nam Từ Liêm",
+      "path": "Nam Từ Liêm, Hà Nội",
+      "path_with_type": "Quận Nam Từ Liêm, Thành phố Hà Nội",
+      "codeCity": 29,
+      "code": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 14,
+      "name": "Thanh Trì",
+      "type": "huyen",
+      "slug": "thanh-tri",
+      "name_with_type": "Huyện Thanh Trì",
+      "path": "Thanh Trì, Hà Nội",
+      "path_with_type": "Huyện Thanh Trì, Thành phố Hà Nội",
+      "codeCity": 29,
+      "parent_code": "01"
+    },
+    {
+      "id": 15,
+      "name": "Bắc Từ Liêm",
+      "type": "quan",
+      "slug": "bac-tu-liem",
+      "name_with_type": "Quận Bắc Từ Liêm",
+      "path": "Bắc Từ Liêm, Hà Nội",
+      "path_with_type": "Quận Bắc Từ Liêm, Thành phố Hà Nội",
+      "codeCity": 29,
+      "parent_code": "01"
+    },
+    {
+      "name": "Thanh Hóa",
+      "type": "thanh-pho",
+      "slug": "thanh-hoa",
+      "name_with_type": "Thành phố Thanh Hóa",
+      "path": "Thanh Hóa, Thanh Hóa",
+      "path_with_type": "Thành phố Thanh Hóa, Tỉnh Thanh Hóa",
+      "code": "380",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Bỉm Sơn",
+      "type": "thi-xa",
+      "slug": "bim-son",
+      "name_with_type": "Thị xã Bỉm Sơn",
+      "path": "Bỉm Sơn, Thanh Hóa",
+      "path_with_type": "Thị xã Bỉm Sơn, Tỉnh Thanh Hóa",
+      "code": "381",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Sầm Sơn",
+      "type": "thanh-pho",
+      "slug": "sam-son",
+      "name_with_type": "Thành phố Sầm Sơn",
+      "path": "Sầm Sơn, Thanh Hóa",
+      "path_with_type": "Thành phố Sầm Sơn, Tỉnh Thanh Hóa",
+      "code": "382",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Mường Lát",
+      "type": "huyen",
+      "slug": "muong-lat",
+      "name_with_type": "Huyện Mường Lát",
+      "path": "Mường Lát, Thanh Hóa",
+      "path_with_type": "Huyện Mường Lát, Tỉnh Thanh Hóa",
+      "code": "384",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Quan Hóa",
+      "type": "huyen",
+      "slug": "quan-hoa",
+      "name_with_type": "Huyện Quan Hóa",
+      "path": "Quan Hóa, Thanh Hóa",
+      "path_with_type": "Huyện Quan Hóa, Tỉnh Thanh Hóa",
+      "code": "385",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Bá Thước",
+      "type": "huyen",
+      "slug": "ba-thuoc",
+      "name_with_type": "Huyện Bá Thước",
+      "path": "Bá Thước, Thanh Hóa",
+      "path_with_type": "Huyện Bá Thước, Tỉnh Thanh Hóa",
+      "codeCity": 36,
+      "code": "386",
+      "parent_code": "38"
+    },
+    {
+      "name": "Quan Sơn",
+      "type": "huyen",
+      "slug": "quan-son",
+      "name_with_type": "Huyện Quan Sơn",
+      "path": "Quan Sơn, Thanh Hóa",
+      "path_with_type": "Huyện Quan Sơn, Tỉnh Thanh Hóa",
+      "code": "387",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Lang Chánh",
+      "type": "huyen",
+      "slug": "lang-chanh",
+      "name_with_type": "Huyện Lang Chánh",
+      "path": "Lang Chánh, Thanh Hóa",
+      "path_with_type": "Huyện Lang Chánh, Tỉnh Thanh Hóa",
+      "code": "388",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Ngọc Lặc",
+      "type": "huyen",
+      "slug": "ngoc-lac",
+      "name_with_type": "Huyện Ngọc Lặc",
+      "path": "Ngọc Lặc, Thanh Hóa",
+      "path_with_type": "Huyện Ngọc Lặc, Tỉnh Thanh Hóa",
+      "code": "389",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Cẩm Thủy",
+      "type": "huyen",
+      "slug": "cam-thuy",
+      "name_with_type": "Huyện Cẩm Thủy",
+      "path": "Cẩm Thủy, Thanh Hóa",
+      "path_with_type": "Huyện Cẩm Thủy, Tỉnh Thanh Hóa",
+      "code": "390",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Thạch Thành",
+      "type": "huyen",
+      "slug": "thach-thanh",
+      "name_with_type": "Huyện Thạch Thành",
+      "path": "Thạch Thành, Thanh Hóa",
+      "path_with_type": "Huyện Thạch Thành, Tỉnh Thanh Hóa",
+      "code": "391",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Hà Trung",
+      "type": "huyen",
+      "slug": "ha-trung",
+      "name_with_type": "Huyện Hà Trung",
+      "path": "Hà Trung, Thanh Hóa",
+      "path_with_type": "Huyện Hà Trung, Tỉnh Thanh Hóa",
+      "code": "392",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Vĩnh Lộc",
+      "type": "huyen",
+      "slug": "vinh-loc",
+      "name_with_type": "Huyện Vĩnh Lộc",
+      "path": "Vĩnh Lộc, Thanh Hóa",
+      "path_with_type": "Huyện Vĩnh Lộc, Tỉnh Thanh Hóa",
+      "code": "393",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Yên Định",
+      "type": "huyen",
+      "slug": "yen-dinh",
+      "name_with_type": "Huyện Yên Định",
+      "path": "Yên Định, Thanh Hóa",
+      "path_with_type": "Huyện Yên Định, Tỉnh Thanh Hóa",
+      "code": "394",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Thọ Xuân",
+      "type": "huyen",
+      "slug": "tho-xuan",
+      "name_with_type": "Huyện Thọ Xuân",
+      "path": "Thọ Xuân, Thanh Hóa",
+      "path_with_type": "Huyện Thọ Xuân, Tỉnh Thanh Hóa",
+      "code": "395",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Thường Xuân",
+      "type": "huyen",
+      "slug": "thuong-xuan",
+      "name_with_type": "Huyện Thường Xuân",
+      "path": "Thường Xuân, Thanh Hóa",
+      "path_with_type": "Huyện Thường Xuân, Tỉnh Thanh Hóa",
+      "code": "396",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Triệu Sơn",
+      "type": "huyen",
+      "slug": "trieu-son",
+      "name_with_type": "Huyện Triệu Sơn",
+      "path": "Triệu Sơn, Thanh Hóa",
+      "path_with_type": "Huyện Triệu Sơn, Tỉnh Thanh Hóa",
+      "code": "397",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Thiệu Hóa",
+      "type": "huyen",
+      "slug": "thieu-hoa",
+      "name_with_type": "Huyện Thiệu Hóa",
+      "path": "Thiệu Hóa, Thanh Hóa",
+      "path_with_type": "Huyện Thiệu Hóa, Tỉnh Thanh Hóa",
+      "code": "398",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Hoằng Hóa",
+      "type": "huyen",
+      "slug": "hoang-hoa",
+      "name_with_type": "Huyện Hoằng Hóa",
+      "path": "Hoằng Hóa, Thanh Hóa",
+      "path_with_type": "Huyện Hoằng Hóa, Tỉnh Thanh Hóa",
+      "code": "399",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Hậu Lộc",
+      "type": "huyen",
+      "slug": "hau-loc",
+      "name_with_type": "Huyện Hậu Lộc",
+      "path": "Hậu Lộc, Thanh Hóa",
+      "path_with_type": "Huyện Hậu Lộc, Tỉnh Thanh Hóa",
+      "code": "400",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Nga Sơn",
+      "type": "huyen",
+      "slug": "nga-son",
+      "name_with_type": "Huyện Nga Sơn",
+      "path": "Nga Sơn, Thanh Hóa",
+      "path_with_type": "Huyện Nga Sơn, Tỉnh Thanh Hóa",
+      "code": "401",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Như Xuân",
+      "type": "huyen",
+      "slug": "nhu-xuan",
+      "name_with_type": "Huyện Như Xuân",
+      "path": "Như Xuân, Thanh Hóa",
+      "path_with_type": "Huyện Như Xuân, Tỉnh Thanh Hóa",
+      "code": "402",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Như Thanh",
+      "type": "huyen",
+      "slug": "nhu-thanh",
+      "name_with_type": "Huyện Như Thanh",
+      "path": "Như Thanh, Thanh Hóa",
+      "path_with_type": "Huyện Như Thanh, Tỉnh Thanh Hóa",
+      "code": "403",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Nông Cống",
+      "type": "huyen",
+      "slug": "nong-cong",
+      "name_with_type": "Huyện Nông Cống",
+      "path": "Nông Cống, Thanh Hóa",
+      "path_with_type": "Huyện Nông Cống, Tỉnh Thanh Hóa",
+      "code": "404",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Đông Sơn",
+      "type": "huyen",
+      "slug": "dong-son",
+      "name_with_type": "Huyện Đông Sơn",
+      "path": "Đông Sơn, Thanh Hóa",
+      "path_with_type": "Huyện Đông Sơn, Tỉnh Thanh Hóa",
+      "code": "405",
+      "codeCity": 36,
+      "parent_code": "38"
+    },
+    {
+      "name": "Quảng Xương",
+      "type": "huyen",
+      "slug": "quang-xuong",
+      "name_with_type": "Huyện Quảng Xương",
+      "path": "Quảng Xương, Thanh Hóa",
+      "path_with_type": "Huyện Quảng Xương, Tỉnh Thanh Hóa",
+      "codeCity": 36,
+      "code": "406",
+      "parent_code": "38"
+    },
+    {
+      "name": "Nghi Sơn",
+      "type": "thi-xa",
+      "slug": "nghi-son",
+      "name_with_type": "Thị xã Nghi Sơn",
+      "path": "Nghi Sơn, Thanh Hóa",
+      "path_with_type": "Thị xã Nghi Sơn, Tỉnh Thanh Hóa",
+      "codeCity": 36,
+      "code": "407",
+      "parent_code": "38"
+    }
+  ]
+}

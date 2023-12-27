@@ -1,0 +1,65 @@
+<div class="wrap_login">
+  <section class="__login mt-5 pt-5">
+    <div class="container d-flex justify-content-center">
+      <form class="form_login ms-4" name="MyForm">
+        <!-- form_login -->
+        <div class="input-group input-username mb-3 w-auto">
+          <!-- input_username -->
+          <span class="input-group-text">
+            <i class="fas fa-user"></i>
+          </span>
+          <input type="text" ng-model="email" name="email" class="form-control p-2" placeholder="Email"
+            ng-required="true" />
+        </div>
+        <!-- input-username -->
+        <div class="input-group input-password mb-3">
+          <!-- input-password -->
+          <span class="input-group-text">
+            <i class="fas fa-lock"></i>
+          </span>
+          <input type="text" name="password" ng-model="password" class="form-control p-2" placeholder="Mật khẩu" />
+        </div>
+        <!-- input-password -->
+        <div class="mb-3 form-check d-flex">
+          <!-- renember and forgot pw -->
+          <input type="checkbox" class="form-check-input border border-dark" id="exampleCheck1" />
+          <label class="form-check-label ms-2" for="exampleCheck1">Ghi nhớ mật khẩu</label>
+          <div class="ps-5 ms-5">
+            <!-- forgot_password -->
+            <a class="forgot_password" href="#" style="text-decoration: none">
+              <span> Quên mật khẩu? </span>
+            </a>
+          </div>
+          <!-- forgot_password -->
+        </div>
+        <!-- renember and forgot pw -->
+        <button type="submit" ng-click="checkAccount()" class="button_login w-100">
+          <span class="text_login">Đăng nhập </span>
+        </button>
+        <div class="login_other d-flex justify-content-center">
+          <span class="mt-3 fw-bold text-dark">Hoặc đăng nhập bằng</span>
+        </div>
+        <div class="group_login d-flex justify-content-center mt-3">
+          <div class="btn btn-primary d-flex">
+            <a href="#">
+              <i class="fab fa-facebook fs-4 text-light float-start"></i>
+            </a>
+          </div>
+          <div class="btn btn-danger d-flex ms-2">
+            <a href="#">
+              <i class="fab fa-google fs-4 text-light float-start"></i>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+          <!-- register -->
+          <a class="register_link" href="#register" style="text-decoration: none">
+            <span class="text-success fw-bold"> Đăng ký tài khoản mới! </span>
+          </a>
+        </div>
+        <!-- resgister -->
+      </form>
+      <!-- form_login -->
+    </div>
+  </section>
+</div>

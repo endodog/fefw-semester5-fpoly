@@ -1,0 +1,74 @@
+<div class="wrap_header" ng-controller="cartController">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container-lg container-fluid"> <!-- container -->
+      <div class="wrap_btn_navCollapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="wrap_icon_brand me-auto ms-3 ms-md-0">
+        <a class="navbar-brand" href="#home">
+          <img src="../../img/logo/logo_gk.png" width="55px">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--  navbar-collapse -->
+        <ul class="navbar-nav mx-auto mt-2 mt-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" aria-expanded="false" data-bs-toggle="">
+              SẢN PHẨM
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="#products1">BÀN PHÍM</a></li>
+              <li><a class="dropdown-item text-light" href="#products2">KEYCAP</a></li>
+              <li><a class="dropdown-item text-light" href="#products3">SWITCH</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#news" class="nav-link">TIN TỨC</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">LIÊN HỆ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#guide">HƯỚNG DẪN</a>
+          </li>
+        </ul>
+      </div> <!-- navbar-collapse -->
+      <div class=" wrap_menu_user d-flex"> <!-- menu_user -->
+        <div class=" wrap_search">
+          <a href="#search">
+            <i class="fas fa-search rounded fs-5 p-2 text-dark">
+            </i>
+          </a>
+        </div>
+        <div class=" wrap_cart ms-2">
+          <a href="#cart" class="cart position-relative d-inline-flex" aria-label="View your shopping cart">
+            <i class="fas fa-shopping-cart rounded fs-5 p-2 text-dark">
+              <span class="cart-basket d-flex align-items-center justify-content-center">
+                {{carts.length}}
+              </span>
+            </i>
+          </a>
+        </div>
+        <div class="dropdown-user ms-2">
+          <div class="dropdown">
+            <a class="hidden-arrow text-dark" href="#user" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user rounded fs-5 p-2"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item text-light" href="#login">
+                  Đăng nhập</a></li>
+              <li><a class="dropdown-item text-light" href="#register">Đăng ký</a></li>
+              <li><a class="dropdown-item text-light" href="#managements">Quản lý</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- menu_user -->
+    </div> <!-- container -->
+  </nav>
+</div>

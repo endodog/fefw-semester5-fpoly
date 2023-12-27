@@ -1,0 +1,57 @@
+<div class="container wrap_products mt-5 pt-4">
+  <div class="wrap_direction mt-3 fs-6">
+    <div class="text-direction">
+      <a class="text-danger text-decoration-none" href="#home">
+        <span class="text_home fw-normal">
+        </span>
+        Trang chủ</a>
+      <span class="text_arrow fw-normal">»</span>
+      <span class="text_products fw-normal">
+        Bàn phím
+      </span>
+      <span class="text_products fw-normal">
+        {{brandModel}}
+      </span>
+    </div>
+    <div class="wrap_control d-flex">
+      <div class="control-left mt-3" style="width: 150px;">
+        <select class="form-select" ng-model="brandModel">
+          <option value="" selected disabled hidden>Thương hiệu</option>
+          <option value="{{brand.name}}" ng-repeat="brand in keyboardBrand">
+            {{brand.name}}
+          </option>
+        </select>
+      </div>
+      <div class="control-right ms-auto mt-3" style="width: 250px;">
+        <select class="form-select" ng-model="sort_price">
+          <option selected value="Mới nhất">Mới nhất</option>
+          <option value="price_asc">Theo giá: thấp đến cao</option>
+          <option value="price_desc">Theo giá: cao xuống thấp</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="displayProducts container">
+  <div class="row">
+    <div class="col-4 product p-2 rounded ms-3 mt-3 border"
+      style="height: 350px; width: 310px; background-color: #ffffff"
+      ng-repeat="product in keyboards | filter: filter_products1 | orderBy:filter_price | limitTo:12 track by $index">
+      <!-- col -->
+      <a class="text-decoration-none" href="#products1/{{product.id}}">
+        <div class="thumbnail d-flex justify-content-center">
+          <img src="{{product.image}}" class="rounded product_image" width="250px" height="200px" />
+        </div>
+        <div class="product_info mt-5">
+          <p class="fw-1 product_name fw-bold" style="color: #18a0c6">
+            {{product.name}}
+          </p>
+          <span
+            class="text-secondary text-decoration-line-through fw-normal product_discount">{{product.priceAfterFalling | currency:"₫" : 0}}</span>
+          <span class="fw-bold product_price" style="color: red">{{product.price | currency:"" : 0}} ₫</span>
+        </div>
+      </a>
+    </div>
+    <!-- col -->
+  </div>
+</div>
